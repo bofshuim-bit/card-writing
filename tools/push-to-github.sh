@@ -59,8 +59,14 @@ echo "   https://github.com/$USER_NAME/$REPO"
 
 echo "== 4/5 推送"
 if [ -n "${GITHUB_TOKEN:-}" ]; then
-  # 用环境变量里的 token，不写进 .git/config
-  git push "https://$USER_NAME:$GITHUB_TOKEN@github.com/$USER_NAME/$REPO.git" main:main
+  # token 只放进请求头，不拼进 URL、不落盘、不进进程参数
+  if command -v base64 >/dev/null 2>&1; then
+    AUTH=$(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 | tr -d '\n')
+  else
+    AUTH=$(node -e "process.stdout.write(Buffer.from('x-access-token:'+process.argv[1]).toString('base64'))" "$GITHUB_TOKEN")
+  fi
+  git -c http.extraheader="Authorization: basic $AUTH" push -u origin main
+  unset AUTH
 else
   echo "   没检测到 GITHUB_TOKEN，改用交互输入："
   echo "   用户名 = $USER_NAME"
