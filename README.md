@@ -12,13 +12,13 @@
 
 ### 2. 给能读网页的 AI
 
-仓库设为 public 后，把下面 URL 里的 `REPLACE_ME` 换成你的 GitHub 用户名，发给 AI：
+仓库设为 public 后，把下面 URL 里的 `bofshuim-bit` 换成你的 GitHub 用户名，发给 AI：
 
 ```
-https://raw.githubusercontent.com/REPLACE_ME/card-writing/main/ALL-IN-ONE.md
+https://raw.githubusercontent.com/bofshuim-bit/card-writing/main/ALL-IN-ONE.md
 ```
 
-> 仓库名必须是 `card-writing` 才能用这个链接；换了名字就把 URL 里的仓库名一起改。
+> 链接已按本仓库填好；fork 或改名后要把用户名和仓库名一起换。
 
 ### 3. 当 skill 安装
 
