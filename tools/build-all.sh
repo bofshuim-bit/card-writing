@@ -13,6 +13,7 @@ files=(
   'references/statusbar-protocol.md'
   'references/style-presets.md'
   'references/pitfalls.md'
+  'references/code-recipes.md'
   'references/review-checklist.md'
 )
 titles=(
@@ -22,6 +23,7 @@ titles=(
   '状态栏协议设计'
   '文风预设：按题材换'
   '技术落地与常见坑'
+  '代码写法：三件套模板'
   '送审清单：平台三条退回标准'
 )
 
@@ -41,8 +43,9 @@ titles=(
 4. 状态栏协议设计
 5. 文风预设：按题材换
 6. 技术落地与常见坑
-7. 送审清单：平台三条退回标准
-8. 交付前自检
+7. 代码写法：三件套模板
+8. 送审清单：平台三条退回标准
+9. 交付前自检
 
 ---
 HEADER
@@ -58,7 +61,7 @@ HEADER
   cat <<'FOOTER'
 ---
 
-# 8. 交付前自检
+# 9. 交付前自检
 
 - [ ] 人设条目化，不是散文
 - [ ] 去过小说化：叙述拆条目、形容词换行为、情绪换动作

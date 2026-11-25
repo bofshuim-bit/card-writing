@@ -39,6 +39,7 @@ references/
   statusbar-protocol.md   协议设计、键表、轮次、界面映射
   style-presets.md     十种题材文风 + 治 AI 腔
   pitfalls.md          12 个技术坑
+  code-recipes.md      三件套代码模板（引擎/注入/侧栏/美化/JSON）
   review-checklist.md  送审清单（平台三条退回标准）
 tools/
   build-all.sh         按顺序拼出 ALL-IN-ONE.md
